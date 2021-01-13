@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 const Profile = props => {
 
@@ -11,4 +12,6 @@ const Profile = props => {
     )
 }
 
-export default Profile;
+const mapStateToProps = reduxState => reduxState;
+
+export default connect(mapStateToProps)(Profile);
